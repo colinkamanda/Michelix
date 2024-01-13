@@ -212,6 +212,10 @@ section{
    font-size: 1.6rem;
    margin: 2rem 0 3rem;
    line-height: 1.3;
+   text-align: justify;
+}
+.about-content p strong{
+color: #3399ff;
 }
 
 .about-content .pop-up {
@@ -335,54 +339,36 @@ transition: .5s ease;
  .contact .h2{
     margin-bottom: 3rem;
 }
-
-.contact form {
-   width:600px;
-   text-align: center;
-   align-items: center;
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
 }
-form .input-box {
-display: flex;
-justify-content: space-between;
-} 
-
-.input-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact .input-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.field .item{
-    width: 100%;
-    padding: 18px;
-}
-.contact form .input-box input,
+.contact .input-box input,
 .contact form textarea{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.5rem 4rem;
-    border-radius: .8rem;
-    margin: .7rem 0;
-    background: #ecf0f3;
-    box-shadow: inset 8px 8px 8px #cbced1,
-                inset -8px -8px 8px #fff;
-font-size:1.5rem;
-} 
-.contact form .input-box input{
-    width: 100%;
-    margin-left:.5rem;
+ width: 100%;
+ padding: 1.9rem;
+ font-size: 1.6rem;
+ border-radius: .8rem;
+ margin: .7rem 0;
+ /* background: #fff; */
 }
-
-.contact .btn{
-    margin-top: 1.7rem;
-    cursor: pointer;
-}
-
 .contact form textarea{
-    resize: none;
+ resize: none;
+ background: #fff;
 }
-form button{
+.contact .input-box input{
+    width: 100%;
+
+    /* width: 49%; */
+}
+ form button{
     padding: 12px 32px;
     border-radius: 6px;
     background: #3399ff;
@@ -394,10 +380,11 @@ form button{
     cursor: pointer;
     margin-top: 20px;
     transition: .5s ease;
-}
+} 
 form button:hover{
     box-shadow: none;
 }
+
 
 .contact h2{
     margin-bottom: 7rem;
@@ -410,8 +397,8 @@ form button:hover{
     display: none;
 }
 .field .item{
-    width: 100%;
-    padding: 18%;
+     /* width: 100%;
+    padding: 18%; */
     background: transparent;
     border: 2px solid #3399ff;
     outline: none;
@@ -521,41 +508,38 @@ transition: .5s ease;
    text-align: center;
 }
 .cv-content {
- display: flex;
+ /* display: flex;
  align-items: center;
- justify-content: center;
+ justify-content: center; */
 }
 
 .web-development{
-   display: flex;
-    flex-direction: row;
     background: url(images/web\ dev\ bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100% 100%;
-    padding-right: 30px
+    width: 100% 100vh;
 }
 .web-development .heading{
-    position: fixed;
+    position: relative;
+    padding-bottom: 15px;
 }
 .web-content{
-    display: flex;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    max-width: 450px;
-    border: 10px;
-    float: right;
-    margin-left: 50%;
     text-align: justify;
 }
 
 .web-content p{
+    background: rgb(234, 240, 241,);
+    min-height:100%;
+    max-width: 80%;
+    background:rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding:5px;
     font-size: 25px;
     line-height: 1.5;
     float: right;
     padding-left: 30px;
-    
-    
+    text-align: justify;
+    /* color: gray; */
 }
 
 .Mobile .heading{
@@ -601,6 +585,21 @@ animation:floatMobile 4s ease-in-out infinite;
     border: .2rem solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
 }
+
+.cv{
+   size: 5.5in 8.5in;
+   
+}
+.cv:left{
+    margin-left: 3cm;
+}
+.cv:right{
+    margin-left: 4cm;
+}
+.cv:first{
+
+}
+
 @keyframes floatMobile {
     0%{
         transform:translate(0);
@@ -635,7 +634,6 @@ animation:floatMobile 4s ease-in-out infinite;
 
 .graphic{
     background: url(images/graphic\ 5.jpg);
-    min-height: 100vh;
     background-repeat: no-repeat;
     background-size:100% 100vh;
 }
@@ -695,7 +693,7 @@ animation:floatMobile 4s ease-in-out infinite;
          .web-development{
             display: flex;
             flex-direction: column;
-            min-width: 350px;
+            /* min-width: 350px; */
          } 
 
          .web-development h1{
@@ -706,7 +704,7 @@ animation:floatMobile 4s ease-in-out infinite;
          }
          .mobile-content i{
             display: none;
-               }
+              }
 }
 @media(max-width:768px) {
    #menu-icon{
@@ -727,12 +725,22 @@ animation:floatMobile 4s ease-in-out infinite;
     .active{
     display: block;
    }
+   .contact form .input-box input{
+    width: 100%;
+}
    
    .navbar a{
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
    }
+   .web-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+ 
    .dropdown button{
     display: block;
     font-size: 2rem;
@@ -809,7 +817,7 @@ animation:floatMobile 4s ease-in-out infinite;
     margin-bottom: 3rem;
  }
  .portifio-container{
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(3, 1fr);
  }
  .web-tex{
    
@@ -833,6 +841,17 @@ animation:floatMobile 4s ease-in-out infinite;
     justify-content: center;
     align-items: center;
 }
+.web-development .heading{
+    position: relative;
+}
+.cv{
+overflow:scroll;
+}
+.graphic{
+    background: url(images/graphic\ 5.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+}
 }
 
 @media(max-width:617px) {
@@ -848,6 +867,17 @@ animation:floatMobile 4s ease-in-out infinite;
     justify-content: center;
     align-items: center;
 }
+.web-content p{
+    /* min-width: 50%; */
+    font-size: 25px;
+    line-height: 1.5;
+    /* padding-left: 30px; */
+    
+}
+.contact .input-box input,
+.contact form textarea{
+ width: 100%;
+}
 }
 @media(max-width:450px) {
   html {
@@ -861,6 +891,18 @@ animation:floatMobile 4s ease-in-out infinite;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.web-content p{
+    font-size: 25px;
+    line-height: 1.5;
+    max-width: none;
+}
+.cv{
+    overflow:scroll;
+    }
+    .contact .input-box input,
+.contact form textarea{
+ width: 100%;
 }
 }
 @media(max-width:365px) {
@@ -877,5 +919,15 @@ animation:floatMobile 4s ease-in-out infinite;
     text-align: center;
     margin-top: 2rem;
     }
-    
+    .graphic{
+        background: url(images/graphic\ 5.jpg);
+        background-repeat:repeat;
+        background-size:100% 100vh;
+    }
+}
+@media(max-width:385px) {
+    .contact form .input-box input{
+        width: 100%;
+        
+    }
 }
