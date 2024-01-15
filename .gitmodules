@@ -1,0 +1,6 @@
+[submodule "cara-website"]
+	path = cara-website
+	url = git@github.com:colinkamanda/cara-website.git
+[submodule "weather-App"]
+	path = weather-App
+	url = git@github.com:colinkamanda/weather-App.git
