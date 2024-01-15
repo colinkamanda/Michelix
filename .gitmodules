@@ -4,3 +4,6 @@
 [submodule "weather-App"]
 	path = weather-App
 	url = git@github.com:colinkamanda/weather-App.git
+[submodule "MyWeatherAPP"]
+	path = MyWeatherAPP
+	url = git@github.com:colinkamanda/MyWeatherAPP.git
